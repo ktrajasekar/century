@@ -1,0 +1,27 @@
+body{
+	font-family: 'Lato', sans-serif !important;
+	color: #231f20;
+}
+.topline{
+	min-height: 20px;
+	background: #3379cd
+}
+.Name h1{
+	font-size: 40px;
+	font-weight: 700;	
+	letter-spacing: 2px;
+	margin-bottom: 0;	
+}
+.Name h4{
+	font-size: 14px;
+	margin: 0
+}
+.contact-details{}
+.contact-details ul{
+	list-style: none;
+	margin: 0;
+	padding: 20px 0 0 0 ;
+}
+.bloglink{
+	background: 
+}
