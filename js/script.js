@@ -24,23 +24,23 @@ $(function(){
         callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
     });
 
-    // //wow animation by using with animate css
-    // var isiPad = (navigator.userAgent.match(/iPad/i) != null);
-    // if (($.browser.mobile)||(isiPad)) {
-    //     // disable animation on mobile
-    //     $("body").removeClass("wow");
-    // }
-    // else{
-    //     var wow = new WOW(
-    //       {
-    //         boxClass:     'wow',
-    //         animateClass: 'animated',
-    //         offset:       0,
-    //         mobile:       true
-    //       }
-    //     );
-    //     wow.init();
-    // }
+    //wow animation by using with animate css
+    var isiPad = (navigator.userAgent.match(/iPad/i) != null);
+    if (($.browser.mobile)||(isiPad)) {
+        // disable animation on mobile
+        $("body").removeClass("wow");
+    }
+    else{
+        var wow = new WOW(
+          {
+            boxClass:     'wow',
+            animateClass: 'animated',
+            offset:       0,
+            mobile:       true
+          }
+        );
+        wow.init();
+    }
 
     /* Demo Scripts for Bootstrap Carousel and Animate.css article
 * on SitePoint by Maria Antonietta Perna
