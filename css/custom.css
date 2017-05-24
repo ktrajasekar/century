@@ -25,3 +25,14 @@ body{
 .bloglink{
 	background:
 }
+.themeColor{
+	color: #E58789;
+}
+.np{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+/*Header*/
+.headerdummy{
+	padding: 20px 0;
+}
