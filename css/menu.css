@@ -20,16 +20,17 @@
 }
 .nav-item a {
 	display:block;
-	color:#000;
+	color:#68696a;
 	text-decoration: none;
 	padding:15px 20px;
-		border-bottom: #fff 2px solid;
+		border-bottom: #fff 5px solid;
+		margin-bottom: -4px;
 	/*border-bottom:1px solid #8B2870;*/
 }
 .nav-item > a:hover {
 	/*background:#822368;*/
 	color: #d2ac2b;
-	border-bottom: #d2ac2b 2px solid;
+	border-bottom: #d2ac2b 5px solid;
 }
 .nav-item:hover .nav-submenu {
 	display:block;
