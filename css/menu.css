@@ -6,8 +6,7 @@
 .nav {
 	position:relative;
 	display:inline-block;
-	font-size:14px;
-	font-weight:900;
+	font-size:16px;
 }
 .nav-list {
 	text-align:left;
@@ -24,11 +23,13 @@
 	color:#000;
 	text-decoration: none;
 	padding:15px 20px;
+		border-bottom: #fff 2px solid;
 	/*border-bottom:1px solid #8B2870;*/
 }
 .nav-item > a:hover {
 	/*background:#822368;*/
-	color: #E58789
+	color: #d2ac2b;
+	border-bottom: #d2ac2b 2px solid;
 }
 .nav-item:hover .nav-submenu {
 	display:block;

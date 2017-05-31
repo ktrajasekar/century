@@ -1,6 +1,12 @@
 body{
-	font-family: 'Lato', sans-serif !important;
+font-family: 'Roboto', sans-serif;
 	color: #231f20;
+}
+.font14{
+	font-size: 14px;
+}
+.font16{
+	font-size: 16px;
 }
 .topline{
 	min-height: 20px;
@@ -26,13 +32,10 @@ body{
 	background:
 }
 .themeColor{
-	color: #E58789;
+	color: #680000;
 }
 .np{
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
 /*Header*/
-.headerdummy{
-	padding: 20px 0;
-}
