@@ -453,9 +453,9 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
     z-index: 2;
 }
 
-#main-wrapper{
+/*#main-wrapper{
     background-image: url(../images/patterns/dots-dark.png);
-}
+}*/
 .section{
     padding-top: 20px;
 }
@@ -2012,7 +2012,7 @@ span.nav-close:before {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image:url(../images/backgrounds/bg-image-2.jpg);
+    background-image:url(../images/quality.jpg);
 }
 #testimonial .testimonial-info{
     color: #fff;
@@ -2865,4 +2865,11 @@ h2.resp-accordion { display: block; }
   background: none;
   display: block;
   width: 260px;
+  margin: 0 auto;
+  color: #000000;
+  font-size: 20px;
+}
+.buttonCentury:hover{
+  color:#fff;
+  background: #680000;
 }

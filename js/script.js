@@ -125,6 +125,16 @@ $(function(){
       singleItem:true
     });
 
+    $("#clients-logo").owlCarousel({
+      navigation : false, // Show next and prev buttons,
+      pagination: false,
+      slideSpeed : 300,
+      autoPlay : 5000,
+      items:4,
+      stopOnHover : false,
+      paginationSpeed : 400
+    });
+
 
     //Counter Up
     $('.counter').counterUp({
