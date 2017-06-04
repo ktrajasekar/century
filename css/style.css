@@ -481,7 +481,7 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
     line-height: 36px;
     font-weight: 700;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 .section-info p{
