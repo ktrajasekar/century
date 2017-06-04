@@ -155,7 +155,7 @@ a:hover,a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
     color: #333;
     text-rendering: optimizelegibility;
     line-height: 1.2em;
@@ -186,7 +186,7 @@ strong.colored{
 }
 input[type=text], input[type=url], input[type=tel], input[type=number], input[type=email], textarea {
     width: 100%;
-    font-family: "Raleway",Helvetica,Arial,sans-serif;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
     height: 40px;
     display: block;
     font-size: 15px;
@@ -323,7 +323,7 @@ input[type=text], input[type=url], input[type=tel], input[type=number], input[ty
 
 /*custom button*/
 .btn{
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 2px;
 }
@@ -461,7 +461,7 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
 }
 .section-title {
     font-size: 3em;
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
     font-weight: 800;
     letter-spacing: 2px;
     padding: 30px 0 0px 0;
@@ -481,7 +481,7 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
     line-height: 36px;
     font-weight: 700;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 2  px;
     text-transform: uppercase;
 }
 .section-info p{
@@ -545,7 +545,7 @@ ul.hr li.hr-icon {
     left: 40px;
 }
 .logo{
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
     font-weight: 200;
     color: #fff;
     margin-top: 18px;
@@ -630,7 +630,7 @@ a .logo:hover{
 }
 
 .navbar ul li a {
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
     font-weight: 800;
     display: block;
     text-transform: uppercase;
@@ -1215,7 +1215,7 @@ a .logo:hover{
 
     font-size: 2.2em;
     text-transform: uppercase;
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
     font-weight: 800;
     letter-spacing: 2px;
     color: #029ece;
@@ -1412,7 +1412,7 @@ a .logo:hover{
 }
 #stats p{
     font-weight: 600;
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
     color: #fff;
     text-transform: uppercase;
 }
@@ -1712,7 +1712,7 @@ ul.team-overlay-social li a:hover{
 .request-text{
     font-size: 2.2em;
     text-transform: uppercase;
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
     font-weight: 800;
     letter-spacing: 2px;
     margin-bottom: 22px;
@@ -1764,7 +1764,7 @@ ul.team-overlay-social li a:hover{
 }
 .grid-gallery figcaption h3 {
     font-size: 1.2em;
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
     font-weight: 600;
     color: #029ece;
     text-transform: uppercase;
@@ -2057,12 +2057,12 @@ span.nav-close:before {
     -moz-border-radius: 50%;
 }
 .client-name{
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
     letter-spacing: 2px;
     font-weight: 600;
 }
 .client-designation{
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
     font-weight: 400;
     /*font-style: italic;*/
 }
@@ -2183,7 +2183,7 @@ span.nav-close:before {
     font-weight: 300;
 }
 p.price-box-title{
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
     font-size: 2em;
     font-weight: 400;
     text-transform: uppercase;
@@ -2362,7 +2362,7 @@ article.blog-post:hover .blog-post,article.blog-post:hover .post-cat a,article.b
 .footer-logo h3{
     margin-top: 11px;
     margin-bottom: 11px;
-    font-family: "Raleway",Arial,sans-serif;
+    font-family: "Roboto",Arial,sans-serif;
 }
 .footer-text a{
     color: #fff;
@@ -2621,7 +2621,7 @@ article.blog-post:hover .blog-post,article.blog-post:hover .post-cat a,article.b
         font-size: 16px;
     }
     .navbar ul li a .primary {
-        font-family: "Raleway",Arial,sans-serif;
+        font-family: "Roboto",Arial,sans-serif;
         font-size: 22px;
         color: rgba(255,255,255,0.8);
         line-height: 22px;
@@ -2848,7 +2848,7 @@ h2.resp-accordion { display: block; }
 
 /**/
 .header-barlist{
-  background: rgba(255,255,255,0.7);
+  background: #fff;
   height: 80px;
   position: absolute;
   width: 100% !important;
