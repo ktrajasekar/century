@@ -473,7 +473,7 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
     color: #d2ac2b
 }
 .section-info{
-    padding: 10px 0px 80px 0px;
+    padding: 10px 0px 65px 0px;
 }
 .section-info h3{
     font-size: 1.5em;
@@ -2256,14 +2256,14 @@ article.blog-post:hover .blog-post,article.blog-post:hover .post-cat a,article.b
 /* 17. Separator - Get Connected
 -------------------------------------------------------------- */
 #address{
-    background-color: #029ECE;
-    padding: 58px 0px 80px 0;
+    padding: 58px 0px 65px 0;
+    color: #fff;
 
 }
 .lts-talk{
     color: #ffffff;
-    font-weight: 800;
-    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 40px;
     text-transform: uppercase;
 }
 .contact-no{
@@ -2849,7 +2849,7 @@ h2.resp-accordion { display: block; }
 /**/
 .header-barlist{
   background: rgba(255,255,255,0.7);
-  height: 90px;
+  height: 80px;
   position: absolute;
   width: 100% !important;
   z-index: 90909;
@@ -2872,4 +2872,60 @@ h2.resp-accordion { display: block; }
 .buttonCentury:hover{
   color:#fff;
   background: #680000;
+}
+/**/
+.home-carousel-caption h2{
+  font-size: 50px;
+  text-align: left;
+  font-weight: 700;
+}
+.home-carousel-caption p{
+  font-size: 30px;
+}
+.onlyCaps{
+  text-transform: uppercase;
+}
+#wheretostart h3{
+  padding: 55px 0 30px 0;
+  font-size: 40px;
+  margin: 0;
+}
+#wheretostart p{
+  padding: 0 0 30px 0;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0
+}
+.clientSection{
+  padding: 40px 0;
+}
+.basepadding{
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.qualityhead{
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0;
+  color: #fff;
+}
+.qualityp{
+  padding: 25px 0;
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+.addressText{
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+.mailstyle{
+  padding-left: 20px;
+}
+.link{
+  color: #fff;
+}
+.link:hover{
+  color: #fff;
 }
