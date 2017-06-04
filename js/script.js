@@ -111,7 +111,7 @@ $(function(){
       slideSpeed : 300,
       autoPlay : 5000,
       stopOnHover : false,
-      paginationSpeed : 400,
+      paginationSpeed : 400, 
       singleItem:true
     });
 
