@@ -109,7 +109,7 @@ $(function(){
     $("#home-text-slider").owlCarousel({
       navigation : true, // Show next and prev buttons
       slideSpeed : 300,
-      // autoPlay : 5000,
+      autoPlay : 5000,
       stopOnHover : false,
       paginationSpeed : 400,
       singleItem:true
