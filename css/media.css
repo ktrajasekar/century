@@ -1,5 +1,14 @@
 @media only screen and (max-width: 480px) {
 
+.home-carousel-caption h2{
+    font-size: 25px;
+}
+.home-carousel-caption p{
+  font-size: 15px;
+}
+.home-text{
+  top: 80px !important;
+}
 
 }
 
