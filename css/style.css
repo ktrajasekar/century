@@ -488,7 +488,6 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
     font-family: "Roboto",Helvetica,Arial,sans-serif;
     font-size: 1.5em;
     font-weight: 400;
-    max-width: 80rem;
     margin: 1em auto 0.25em auto;
     letter-spacing: 0;
     line-height: 1.5em;
@@ -1065,9 +1064,8 @@ a .logo:hover{
 }
 .home-carousel-caption p{
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #fff;
-    letter-spacing: 2px;
     text-align:left;
     text-transform: uppercase;
 }
@@ -2848,11 +2846,15 @@ h2.resp-accordion { display: block; }
 
 /**/
 .header-barlist{
-  background: #fff;
   height: 80px;
-  position: absolute;
+  position: fixed;
+  background: rgba(255, 255, 255, 1) ;
   width: 100% !important;
   z-index: 90909;
+}
+.myClass{
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0.8em #ccc;
 }
 
 /* Wheretostart */

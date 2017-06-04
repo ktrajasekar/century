@@ -10,8 +10,8 @@ $(function(){
 
     //Logo fadeIn fadeOut on
     $(window).scroll(function(){
-      if($(this).scrollTop() > $(window).height()/2.2) $('.logo-wrapper').fadeOut('slow');
-      if($(this).scrollTop() < $(window).height()/2.2) $('.logo-wrapper').fadeIn('slow');
+      if($(this).scrollTop() > $(window).height()/2.2) $('.header-barlist').addClass( "myClass" );
+      if($(this).scrollTop() < $(window).height()/2.2) $('.header-barlist').removeClass("myClass").fadeIn('slow');
     });
 
     //Using the smooth scroll for smooth navigation
@@ -111,7 +111,7 @@ $(function(){
       slideSpeed : 300,
       autoPlay : 5000,
       stopOnHover : false,
-      paginationSpeed : 400, 
+      paginationSpeed : 400,
       singleItem:true
     });
 
