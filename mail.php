@@ -20,8 +20,8 @@ else
     /*
      * Setup email addresses and change it to your own
      */
-    $from = "kt.rajasekar@gmail.com";
-    $to = "kt.rajasekar@gmail.com";
+    $from = "kalidas@centurypapersacks.com";
+    $to = "kalidas@centurypapersacks.com";
     $subject = "Simple test for mail function";
     $message = "This is a test to check if php mail function sends out the email";
     $headers = "From:" . $from;
