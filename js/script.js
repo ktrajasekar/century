@@ -113,7 +113,8 @@ $(function(){
       stopOnHover : false,
       paginationSpeed : 400,
       loop: true,
-      items:1
+      items:1,
+      dots:false,
     });
 
     $("#products-slider").owlCarousel({
