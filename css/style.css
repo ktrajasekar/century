@@ -2931,3 +2931,24 @@ h2.resp-accordion { display: block; }
 .link:hover{
   color: #fff;
 }
+.owl-dots{
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+}
+.owl-dot{
+  width: 15px;
+  border-radius: 50%;
+  float: left;
+  height: 15px;
+  margin-right: 5px;
+  background-color: #7f7f7f;
+}
+.owl-dot.active{
+  background: #680000
+}
+#clients-logo img{
+  width: auto !important;
+  text-align: center;
+  margin: 0 auto;
+}

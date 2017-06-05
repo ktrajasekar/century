@@ -9,12 +9,23 @@
 .home-text{
   top: 80px !important;
 }
+.addressText{
+  font-size:15px;
+}
+.lts-talk{
+  font-size: 20px;
+}
 
 }
 
  /* Tab */
 @media only screen and (min-width: 481px) and (max-width: 960px) {
-
+  .addressText{
+    font-size:18px;
+  }
+  .lts-talk{
+    font-size: 20px;
+  }
 
 	}
 

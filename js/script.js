@@ -108,11 +108,12 @@ $(function(){
     // Carousel
     $("#home-text-slider").owlCarousel({
       navigation : true, // Show next and prev buttons
-      slideSpeed : 300,
+      slideSpeed : 500,
       autoPlay : 5000,
       stopOnHover : false,
       paginationSpeed : 400,
-      singleItem:true
+      loop: true,
+      items:1
     });
 
     $("#products-slider").owlCarousel({
@@ -121,8 +122,8 @@ $(function(){
       autoPlay : 5000,
       items:3,
       stopOnHover : false,
-      paginationSpeed : 400,
-      singleItem:true
+      loop: true,
+      dots:true
     });
 
     $("#clients-logo").owlCarousel({
@@ -131,8 +132,23 @@ $(function(){
       slideSpeed : 300,
       autoPlay : 5000,
       items:4,
+      margin:20,
       stopOnHover : false,
-      paginationSpeed : 400
+      paginationSpeed : 400,
+      dots:false,
+      loop: true,
+      responsive:{
+              0:{
+                  items:1,
+                  responsiveClass:true,
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:5
+              }
+          }
     });
 
 
