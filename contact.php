@@ -2,13 +2,13 @@
 	if (isset($_POST["submit"])) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
+		$phoneno = $_POST['phoneno'];
 		$message = $_POST['message'];
-		$human = intval($_POST['human']);
 		$from = 'Demo Contact Form';
 		$to = 'info@centurypapersacks.com';
 		$subject = 'Message from Contact Demo ';
 
-		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
+		$body ="From: $name\n E-Mail: $email\n Phone No: $phoneno \n Message:\n $message ";
 		// Check if name has been entered
 		if (!$_POST['name']) {
 			$errName = 'Please enter your name';
@@ -17,6 +17,10 @@
 		// Check if email has been entered and is valid
 		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 			$errEmail = 'Please enter a valid email address';
+		}
+		// Check if name has been entered
+		if (!$_POST['phoneno']) {
+			$errPhone = 'Please enter your Phone No';
 		}
 
 		//Check if message has been entered
@@ -28,7 +32,7 @@
 		// 	$errHuman = 'Your anti-spam is incorrect';
 		// }
 // If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage) {
+if (!$errName && !$errEmail && !$errMessage && !$errPhone) {
 	if (mail($to, $subject, $body, $from)) {
 		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
 	} else {
@@ -79,8 +83,8 @@ if (!$errName && !$errEmail && !$errMessage) {
 					<div class="form-group">
 						<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-							<?php echo "<p class='text-danger'>$errHuman</p>";?>
+							<input type="text" class="form-control" id="phoneno" name="human" placeholder="Your Answer">
+							<?php echo "<p class='text-danger'>$errPhone</p>";?>
 						</div>
 					</div>
 					<div class="form-group">
