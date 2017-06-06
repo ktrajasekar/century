@@ -1,44 +1,3 @@
-<?php
-	if (isset($_POST["submit"])) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$phoneno = $_POST['phoneno'];
-		$message = $_POST['message'];
-		$from = 'Demo Contact Form';
-		$to = 'info@centurypapersacks.com';
-		$subject = 'Message from Contact Demo ';
-
-		$body ="From: $name\n E-Mail: $email\n Phone No: $phoneno \n Message:\n $message ";
-		// Check if name has been entered
-		if (!$_POST['name']) {
-			$errName = 'Please enter your name';
-		}
-
-		// Check if email has been entered and is valid
-		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-			$errEmail = 'Please enter a valid email address';
-		}
-		// Check if name has been entered
-		if (!$_POST['phoneno']) {
-			$errPhone = 'Please enter your Phone No';
-		}
-
-		//Check if message has been entered
-		if (!$_POST['message']) {
-			$errMessage = 'Please enter your message';
-		}
-
-// If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage && !$errPhone) {
-	if (mail($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-	} else {
-		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
-	}
-}
-	}
-?>
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -315,28 +274,24 @@ made of high quality materials</p>
           </div>
         </div>
         <div class="row">
-          	<form class="form-horizontal" role="form" name="contactformtxt" id="contactformtxt">
           <fieldset id="contactform" class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">
             <div id="form_result"></div>
             <div class="row">
               <div class="col-md-6 col-md-offset-3">
-                <input name="name" type="text" id="name" class="form-control" placeholder="Full Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-                <?php echo "<p class='text-danger'>$errName</p>";?>
+                <input name="name" type="text" id="name" class="form-control" placeholder="Full Name">
               </div>
             </div>
             <div class="row">
               <div class="col-md-3 col-md-offset-3">
-                <input name="email" type="text" id="email" class="form-control" placeholder="Valid email ID" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-							<?php echo "<p class='text-danger'>$errEmail</p>";?>
+                <input name="email" type="text" id="email" class="form-control" value="" placeholder="Valid email ID">
               </div>
               <div class="col-md-3">
-                <input name="phoneno" type="text" id="phoneno" name="phoneno" class="form-control" value="" placeholder="Contact No">
+                <input name="phone" type="text" id="phone" class="form-control" value="" placeholder="Contact No">
               </div>
             </div>
             <div class="row">
               <div class="col-md-6 col-md-offset-3">
-                <textarea name="message" cols="40" rows="5" id="comments" class="form-control" placeholder="Your Message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
-	               <?php echo "<p class='text-danger'>$errMessage</p>";?>
+                <textarea name="message" cols="40" rows="5" id="comments" class="form-control" placeholder="Your Message"></textarea>
               </div>
             </div>
             <div class="row">
@@ -345,7 +300,6 @@ made of high quality materials</p>
               </div>
             </div>
           </fieldset>
-        </form>
           <!-- </form> -->
         </div>
       </div>
@@ -422,26 +376,9 @@ made of high quality materials</p>
             fade: 1000,
             duration: 5000
         });
-
       </script>
 
-<script>
 
-$(function () {
-    $('#submit').on('submit',function (e) {
-              $.ajax({
-                type: 'post',
-                url: 'index.php',
-                data: $('#contactformtxt').serialize(),
-                success: function () {
-                 alert("Email has been sent!");
-                }
-              });
-          e.preventDefault();
-        });
-});
-
-</script>
 
 </body>
 
