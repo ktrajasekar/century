@@ -315,7 +315,7 @@ made of high quality materials</p>
           </div>
         </div>
         <div class="row">
-          	<form class="form-horizontal" role="form" method="post" action="">
+          	<form class="form-horizontal" role="form" name="contactformtxt" id="contactformtxt">
           <fieldset id="contactform" class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">
             <div id="form_result"></div>
             <div class="row">
@@ -422,10 +422,26 @@ made of high quality materials</p>
             fade: 1000,
             duration: 5000
         });
-        
+
       </script>
 
+<script>
 
+$(function () {
+    $('#submit').on('submit',function (e) {
+              $.ajax({
+                type: 'post',
+                url: 'index.php',
+                data: $('#contactformtxt').serialize(),
+                success: function () {
+                 alert("Email has been sent!");
+                }
+              });
+          e.preventDefault();
+        });
+});
+
+</script>
 
 </body>
 
