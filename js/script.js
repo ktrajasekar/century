@@ -124,7 +124,19 @@ $(function(){
       items:3,
       stopOnHover : false,
       loop: true,
-      dots:true
+      dots:true,
+      responsive:{
+              0:{
+                  items:1,
+                  responsiveClass:true,
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:5
+              }
+          }
     });
 
     $("#clients-logo").owlCarousel({
