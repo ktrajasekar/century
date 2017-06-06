@@ -2947,7 +2947,7 @@ h2.resp-accordion { display: block; }
 .owl-dot.active{
   background: #680000
 }
-#clients-logo img{
+#clients-logo img, #products-slider img{
   width: auto !important;
   text-align: center;
   margin: 0 auto;

@@ -401,7 +401,7 @@ made of high quality materials</p>
 <script type="text/javascript" src="js/vendor/respond.js"></script>
 <script type="text/javascript" src="js/vendor/jquery.counterup.js"></script>
 <script type="text/javascript" src="js/vendor/waypoints.min.js"></script>
-<!-- <script type="text/javascript" src="js/vendor/smoothscroll.js"></script></script> -->
+<script type="text/javascript" src="js/vendor/smoothscroll.js"></script></script>
 <script type="text/javascript" src="js/vendor/jquery.backstretch.min.js"></script>
 <script type="text/javascript" src="js/vendor/wow.js"></script>
 <script type="text/javascript" src="js/vendor/detectmobilebrowser.js"></script>
