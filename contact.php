@@ -5,7 +5,7 @@
 		$message = $_POST['message'];
 		$human = intval($_POST['human']);
 		$from = 'Demo Contact Form';
-		$to = 'kt.rajasekar@gmail.com';
+		$to = 'info@centurypapersacks.com';
 		$subject = 'Message from Contact Demo ';
 
 		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
@@ -36,14 +36,6 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 	}
 }
 	}
-?>
-<?php
-$to = "kt.rajasekar@gmail.com";
-$subject = "My subject";
-$txt = "Hello world!";
-$headers = "From: webmaster@hello.com" . "\r\n" .
-"CC: somebodyelse@example.com";
-mail($to,$subject,$txt,$headers);
 ?>
 
 <!DOCTYPE html>
