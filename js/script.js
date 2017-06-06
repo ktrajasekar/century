@@ -121,7 +121,6 @@ $(function(){
       navigation : true, // Show next and prev buttons
       slideSpeed : 300,
       autoPlay : 5000,
-      items:3,
       stopOnHover : false,
       loop: true,
       dots:true,
@@ -134,7 +133,7 @@ $(function(){
                   items:3
               },
               1000:{
-                  items:5
+                  items:3
               }
           }
     });
@@ -144,7 +143,6 @@ $(function(){
       pagination: false,
       slideSpeed : 300,
       autoPlay : 5000,
-      items:4,
       margin:20,
       stopOnHover : false,
       paginationSpeed : 400,
