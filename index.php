@@ -315,7 +315,7 @@ made of high quality materials</p>
           </div>
         </div>
         <div class="row">
-          	<form class="form-horizontal" role="form" method="post" action="index.php">
+          	<form class="form-horizontal" role="form" method="post" action="">
           <fieldset id="contactform" class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">
             <div id="form_result"></div>
             <div class="row">
@@ -401,7 +401,7 @@ made of high quality materials</p>
 <script type="text/javascript" src="js/vendor/respond.js"></script>
 <script type="text/javascript" src="js/vendor/jquery.counterup.js"></script>
 <script type="text/javascript" src="js/vendor/waypoints.min.js"></script>
-<script type="text/javascript" src="js/vendor/smoothscroll.js"></script></script>
+<!-- <script type="text/javascript" src="js/vendor/smoothscroll.js"></script></script> -->
 <script type="text/javascript" src="js/vendor/jquery.backstretch.min.js"></script>
 <script type="text/javascript" src="js/vendor/wow.js"></script>
 <script type="text/javascript" src="js/vendor/detectmobilebrowser.js"></script>
@@ -422,6 +422,11 @@ made of high quality materials</p>
             fade: 1000,
             duration: 5000
         });
+
+        $("#submit").submit( function() {
+    $('body').scrollTo('#result',{duration:2000});
+    return false;
+    });
       </script>
 
 
