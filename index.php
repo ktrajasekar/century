@@ -75,7 +75,13 @@ green-2" media="screen"/>
 <script type="text/javascript" src="js/vendor/modernizr.custom.js"></script>
 </head>
 <body>
-
+<!-- preloader -->
+<div id="pre-loader">
+  <div class="pre-loader-container">
+    <h2 class="section-title text-center preload-logo wow bounceIn"> <span class="section-title-border">Century Paper Sacks</span> </h2>
+    <div class="loader wow"></div>
+  </div>
+</div>
 <div id="wrapper" class="light-slider">
   <div class="header-barlist clearfix">
   <!-- logo -->
@@ -416,12 +422,11 @@ made of high quality materials</p>
             fade: 1000,
             duration: 5000
         });
-
-        $("#submit").submit( function() {
-    $('body').scrollTo('#result',{duration:2000});
-    return false;
-    });
+        
       </script>
+
+
+
 </body>
 
 </html>

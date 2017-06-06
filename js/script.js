@@ -1,11 +1,11 @@
 $(function(){
     "use strict";
     // Full screen pre loader
-    // $(window).load(function(){
-    //     $("#pre-loader").delay(500).fadeOut(2000);
-    //     $(".preload-logo").addClass('zoomOutUp');
-    //     $(".loader").addClass('zoomOutDown');
-    // });
+    $(window).load(function(){
+        $("#pre-loader").delay(500).fadeOut(2000);
+        $(".preload-logo").addClass('zoomOutUp');
+        $(".loader").addClass('zoomOutDown');
+    });
 
 
     //Logo fadeIn fadeOut on
