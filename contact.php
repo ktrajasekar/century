@@ -27,10 +27,7 @@
 		if (!$_POST['message']) {
 			$errMessage = 'Please enter your message';
 		}
-		// //Check if simple anti-bot test is correct
-		// if ($human !== 5) {
-		// 	$errHuman = 'Your anti-spam is incorrect';
-		// }
+
 // If there are no errors, send the email
 if (!$errName && !$errEmail && !$errMessage && !$errPhone) {
 	if (mail($to, $subject, $body, $from)) {
@@ -83,7 +80,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errPhone) {
 					<div class="form-group">
 						<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="phoneno" name="human" placeholder="Your Answer">
+							<input type="text" class="form-control" id="phoneno" name="human" placeholder="Your Answer" value="<?php echo htmlspecialchars($_POST['phoneno']); ?>">
 							<?php echo "<p class='text-danger'>$errPhone</p>";?>
 						</div>
 					</div>
