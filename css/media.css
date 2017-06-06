@@ -32,6 +32,10 @@
  /* Desktop */
   @media only screen and (min-width: 961px) {
 
-
+    #clients-logo img, #products-slider img{
+      width: auto !important;
+      text-align: center;
+      margin: 0 auto;
+    }
 
  }
