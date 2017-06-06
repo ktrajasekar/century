@@ -2,6 +2,9 @@
 	if (isset($_POST["submit"])) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
+    <script>
+      console.log("inside");
+    </script>
 		$phoneno = $_POST['phoneno'];
 		$message = $_POST['message'];
 		$from = 'Demo Contact Form';
