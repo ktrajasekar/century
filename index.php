@@ -1,44 +1,3 @@
-<?php
-	if (isset($_POST["submit"])) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$phoneno = $_POST['phoneno'];
-		$message = $_POST['message'];
-		$from = 'Demo Contact Form';
-		$to = 'info@centurypapersacks.com';
-		$subject = 'Message from Contact Demo ';
-
-		$body ="From: $name\n E-Mail: $email\n Phone No: $phoneno \n Message:\n $message ";
-		// Check if name has been entered
-		if (!$_POST['name']) {
-			$errName = 'Please enter your name';
-		}
-
-		// Check if email has been entered and is valid
-		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-			$errEmail = 'Please enter a valid email address';
-		}
-		// Check if name has been entered
-		if (!$_POST['phoneno']) {
-			$errPhone = 'Please enter your Phone No';
-		}
-
-		//Check if message has been entered
-		if (!$_POST['message']) {
-			$errMessage = 'Please enter your message';
-		}
-
-// If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage && !$errPhone) {
-	if (mail($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-	} else {
-		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
-	}
-}
-	}
-?>
-
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -300,56 +259,28 @@ made of high quality materials</p>
     </section>
     <!-- /address -->
     <!-- contact -->
-    <section id="contact" class="row section">
-      <div id="container">
-        <div class="row">
-          <h2 class="section-title text-center"> <span class="section-title-border wow pulse" data-wow-duration="1s" data-wow-delay="1s">Get In Touch</span> </h2>
-          <div class="section-info col-md-10 col-md-offset-1 text-center wow fadeInDown">
-            <h3>We would love to hear from<strong> you.</strong></h3>
-            <ul class="hr">
-              <li class="hr-line"><span></span></li>
-              <li class="hr-icon"><i class="icon_mail_alt"></i></li>
-              <li class="hr-line"><span></span></li>
-            </ul>
-            <p>Drop us a line, whether it is a comment, a question, a work proposition. You can use either the form below or the contact details given above.</p>
-          </div>
+    <div id="frmContact">
+        <div id="mail-status"></div>
+        <div>
+            <label style="padding-top:20px;">Name</label><span id="userName-info" class="info"></span><br/>
+            <input type="text" name="userName" id="userName" class="demoInputBox">
         </div>
-        <div class="row">
-          	<form class="form-horizontal" role="form" method="post" action="index.php">
-          <fieldset id="contactform" class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">
-            <div id="form_result"></div>
-            <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-                <input name="name" type="text" id="name" class="form-control" placeholder="Full Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-                <?php echo "<p class='text-danger'>$errName</p>";?>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 col-md-offset-3">
-                <input name="email" type="text" id="email" class="form-control" placeholder="Valid email ID" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-							<?php echo "<p class='text-danger'>$errEmail</p>";?>
-              </div>
-              <div class="col-md-3">
-                <input name="phoneno" type="text" id="phoneno" name="phoneno" class="form-control" value="" placeholder="Contact No">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-                <textarea name="message" cols="40" rows="5" id="comments" class="form-control" placeholder="Your Message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
-	               <?php echo "<p class='text-danger'>$errMessage</p>";?>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button type="submit" class="btn btn-default btn-lg" id="submit">SUBMIT</button>
-              </div>
-            </div>
-          </fieldset>
-        </form>
-          <!-- </form> -->
+        <div>
+            <label>Email</label><span id="userEmail-info" class="info"></span><br/>
+            <input type="text" name="userEmail" id="userEmail" class="demoInputBox">
         </div>
-      </div>
-    </section><br>
+        <div>
+            <label>Subject</label><span id="subject-info" class="info"></span><br/>
+            <input type="text" name="subject" id="subject" class="demoInputBox">
+        </div>
+        <div>
+            <label>Content</label><span id="content-info" class="info"></span><br/>
+            <textarea name="content" id="content" class="demoInputBox" cols="60" rows="6"></textarea>
+        </div>
+        <div>
+            <button name="submit" class="btnAction" onClick="sendContact();">Send</button>
+        </div>
+    </div>
     <!-- /contact -->
     <!-- footer -->
     <footer id="footer">
@@ -409,7 +340,7 @@ made of high quality materials</p>
 <script type="text/javascript" src="js/vendor/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="js/vendor/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script src="js/vendor/easy-responsive-tabs.js"></script>
+<script type="text/javascript" src="js/vendor/easy-responsive-tabs.js" ></script>
 <script type="text/javascript">
        /* ==============================================
         Backstretch - v1.1
@@ -422,9 +353,59 @@ made of high quality materials</p>
             fade: 1000,
             duration: 5000
         });
-
       </script>
 
+<script type="text/javascript">
+function sendContact() {
+    var valid;
+    valid = validateContact();
+    if(valid) {
+        jQuery.ajax({
+            url: "contactmail.php",
+            data:'userName='+$("#userName").val()+'&userEmail='+
+            $("#userEmail").val()+'&subject='+
+            $("#subject").val()+'&content='+
+            $(content).val(),
+            type: "POST",
+            success:function(data){
+                $("#mail-status").html(data);
+            },
+            error:function (){}
+        });
+    }
+}
+function validateContact() {
+    var valid = true;
+    $(".demoInputBox").css('background-color','');
+    $(".info").html('');
+    if(!$("#userName").val()) {
+        $("#userName-info").html("(required)");
+        $("#userName").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    if(!$("#userEmail").val()) {
+        $("#userEmail-info").html("(required)");
+        $("#userEmail").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+        $("#userEmail-info").html("(invalid)");
+        $("#userEmail").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    if(!$("#subject").val()) {
+        $("#subject-info").html("(required)");
+        $("#subject").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    if(!$("#content").val()) {
+        $("#content-info").html("(required)");
+        $("#content").css('background-color','#FFFFDF');
+        valid = false;
+    }
+    return valid;
+}
+</script>
 
 </body>
 
