@@ -274,7 +274,9 @@ made of high quality materials</p>
           </div>
         </div>
 				<div class="row" id="contactform" class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">
-		  <div id="form-messages"></div>
+		    <div class="text-center">
+		      <div id="form-messages"></div>
+		    </div>
 			<form id="ajax-contact" method="post" action="mailer.php">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
