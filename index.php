@@ -276,6 +276,11 @@ made of high quality materials</p>
 				</div>
 
 				<div class="field">
+					<label for="message">Phone:</label>
+					<textarea id="phone" name="phone" required></textarea>
+				</div>
+
+				<div class="field">
 					<label for="message">Message:</label>
 					<textarea id="message" name="message" required></textarea>
 				</div>
@@ -394,6 +399,7 @@ $(function() {
 			$('#name').val('');
 			$('#email').val('');
 			$('#message').val('');
+			$('#phone').val('');
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
