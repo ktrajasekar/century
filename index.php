@@ -259,38 +259,58 @@ made of high quality materials</p>
     </section>
     <!-- /address -->
     <!-- contact -->
-		<div id="page-wrapper">
-		  <h1>AJAX Contact Form Demo</h1>
-
+		    <section id="contact" class="row section">
+      <div id="container">
+				<div class="row">
+          <h2 class="section-title text-center"> <span class="section-title-border wow pulse" data-wow-duration="1s" data-wow-delay="1s">Get In Touch</span> </h2>
+          <div class="section-info col-md-10 col-md-offset-1 text-center wow fadeInDown">
+            <h3>We would love to hear from<strong> you.</strong></h3>
+            <ul class="hr">
+              <li class="hr-line"><span></span></li>
+              <li class="hr-icon"><i class="icon_mail_alt"></i></li>
+              <li class="hr-line"><span></span></li>
+            </ul>
+            <p>Drop us a line, whether it is a comment, a question, a work proposition. You can use either the form below or the contact details given above.</p>
+          </div>
+        </div>
+				<div class="row" id="contactform" class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">
 		  <div id="form-messages"></div>
-
 			<form id="ajax-contact" method="post" action="mailer.php">
-				<div class="field">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
 					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" required>
+					<input type="text" id="name" name="name" required class="form-control" placeholder="Full Name">
+				</div>
 				</div>
 
-				<div class="field">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-3">
 					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required>
+					<input type="email" id="email" name="email" required class="form-control" placeholder="Email">
 				</div>
 
-				<div class="field">
+        <div class="col-md-3">
 					<label for="message">Phone:</label>
-					<textarea id="phone" name="phone" required></textarea>
+					<input id="phone" name="phone" required class="form-control" placeholder="Phone">
 				</div>
-
-				<div class="field">
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
 					<label for="message">Message:</label>
-					<textarea id="message" name="message" required></textarea>
+					<textarea id="message" name="message" required class="form-control"></textarea>
 				</div>
-
-				<div class="field">
-					<button type="submit">Send</button>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+					<button type="submit" class="btn btn-default btn-lg">SUBMIT</button>
 				</div>
+      </div>
 			</form>
 		</div>
-    <!-- /contact -->
+		</div>
+	</section>
+  <br/>
+    <!-- contact -->
     <!-- footer -->
     <footer id="footer">
       <div class="container">

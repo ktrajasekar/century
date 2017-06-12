@@ -259,9 +259,9 @@ made of high quality materials</p>
     </section>
     <!-- /address -->
     <!-- contact -->
-		    <section id="contact" class="row section">
+    <section id="contact" class="row section">
       <div id="container">
-				<div class="row">
+        <div class="row">
           <h2 class="section-title text-center"> <span class="section-title-border wow pulse" data-wow-duration="1s" data-wow-delay="1s">Get In Touch</span> </h2>
           <div class="section-info col-md-10 col-md-offset-1 text-center wow fadeInDown">
             <h3>We would love to hear from<strong> you.</strong></h3>
@@ -273,44 +273,38 @@ made of high quality materials</p>
             <p>Drop us a line, whether it is a comment, a question, a work proposition. You can use either the form below or the contact details given above.</p>
           </div>
         </div>
-				<div class="row" id="contactform" class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">
-		  <div id="form-messages"></div>
-			<form id="ajax-contact" method="post" action="mailer.php">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" required class="form-control" placeholder="Full Name">
-				</div>
-				</div>
-
         <div class="row">
-          <div class="col-md-3 col-md-offset-3">
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required class="form-control" placeholder="Email">
-				</div>
-
-        <div class="col-md-3">
-					<label for="message">Phone:</label>
-					<input id="phone" name="phone" required class="form-control" placeholder="Phone">
-				</div>
+          <fieldset id="contactform" class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">
+            <div id="form_result"></div>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <input name="name" type="text" id="name" class="form-control" placeholder="Full Name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-md-offset-3">
+                <input name="email" type="text" id="email" class="form-control" value="" placeholder="Valid email ID">
+              </div>
+              <div class="col-md-3">
+                <input name="phone" type="text" id="phone" class="form-control" value="" placeholder="Contact No">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <textarea name="message" cols="40" rows="5" id="comments" class="form-control" placeholder="Your Message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-default btn-lg" id="submit">SUBMIT</button>
+              </div>
+            </div>
+          </fieldset>
+          <!-- </form> -->
+        </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-					<label for="message">Message:</label>
-					<textarea id="message" name="message" required class="form-control"></textarea>
-				</div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-					<button type="submit" class="btn btn-default btn-lg">SUBMIT</button>
-				</div>
-      </div>
-			</form>
-		</div>
-		</div>
-	</section>
-  <br/>
-    <!-- contact -->
+    </section><br>
+    <!-- /contact -->
     <!-- footer -->
     <footer id="footer">
       <div class="container">
@@ -369,7 +363,7 @@ made of high quality materials</p>
 <script type="text/javascript" src="js/vendor/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="js/vendor/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/vendor/easy-responsive-tabs.js" ></script>
+<script src="js/vendor/easy-responsive-tabs.js"></script>
 <script type="text/javascript">
        /* ==============================================
         Backstretch - v1.1
@@ -384,60 +378,7 @@ made of high quality materials</p>
         });
       </script>
 
-<script type="text/javascript">
-$(function() {
 
-	// Get the form.
-	var form = $('#ajax-contact');
-
-	// Get the messages div.
-	var formMessages = $('#form-messages');
-
-	// Set up an event listener for the contact form.
-	$(form).submit(function(e) {
-		// Stop the browser from submitting the form.
-		e.preventDefault();
-
-		// Serialize the form data.
-		var formData = $(form).serialize();
-
-		// Submit the form using AJAX.
-		$.ajax({
-			type: 'POST',
-			url: $(form).attr('action'),
-			data: formData
-		})
-		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('error');
-			$(formMessages).addClass('success');
-
-			// Set the message text.
-			$(formMessages).text(response);
-
-			// Clear the form.
-			$('#name').val('');
-			$('#email').val('');
-			$('#message').val('');
-			$('#phone').val('');
-		})
-		.fail(function(data) {
-			// Make sure that the formMessages div has the 'error' class.
-			$(formMessages).removeClass('success');
-			$(formMessages).addClass('error');
-
-			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
-			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
-			}
-		});
-
-	});
-
-});
-</script>
 
 </body>
 
