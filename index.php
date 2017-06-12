@@ -259,27 +259,31 @@ made of high quality materials</p>
     </section>
     <!-- /address -->
     <!-- contact -->
-		<div id="frmContact">
-		    <div id="mail-status"></div>
-		    <div>
-		        <label style="padding-top:20px;">Name</label><span id="userName-info" class="info"></span><br/>
-		        <input type="text" name="userName" id="userName" class="demoInputBox">
-		    </div>
-		    <div>
-		        <label>Email</label><span id="userEmail-info" class="info"></span><br/>
-		        <input type="text" name="userEmail" id="userEmail" class="demoInputBox">
-		    </div>
-		    <div>
-		        <label>Subject</label><span id="subject-info" class="info"></span><br/>
-		        <input type="text" name="subject" id="subject" class="demoInputBox">
-		    </div>
-		    <div>
-		        <label>Content</label><span id="content-info" class="info"></span><br/>
-		        <textarea name="content" id="content" class="demoInputBox" cols="60" rows="6"></textarea>
-		    </div>
-		    <div>
-		        <button name="submit" class="btnAction" onClick="sendContact();">Send</button>
-		    </div>
+		<div id="page-wrapper">
+		  <h1>AJAX Contact Form Demo</h1>
+
+		  <div id="form-messages"></div>
+
+			<form id="ajax-contact" method="post" action="mailer.php">
+				<div class="field">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+
+				<div class="field">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+
+				<div class="field">
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" required></textarea>
+				</div>
+
+				<div class="field">
+					<button type="submit">Send</button>
+				</div>
+			</form>
 		</div>
     <!-- /contact -->
     <!-- footer -->
@@ -356,55 +360,57 @@ made of high quality materials</p>
       </script>
 
 <script type="text/javascript">
-function sendContact() {
-    var valid;
-    valid = validateContact();
-    if(valid) {
-        jQuery.ajax({
-            url: "contactmail.php",
-            data:'userName='+$("#userName").val()+'&userEmail='+
-            $("#userEmail").val()+'&subject='+
-            $("#subject").val()+'&content='+
-            $(content).val(),
-            type: "POST",
-            success:function(data){
-                $("#mail-status").html(data);
-            },
-            error:function (){}
-        });
-    }
-}
-function validateContact() {
-    var valid = true;
-    $(".demoInputBox").css('background-color','');
-    $(".info").html('');
-    if(!$("#userName").val()) {
-        $("#userName-info").html("(required)");
-        $("#userName").css('background-color','#FFFFDF');
-        valid = false;
-    }
-    if(!$("#userEmail").val()) {
-        $("#userEmail-info").html("(required)");
-        $("#userEmail").css('background-color','#FFFFDF');
-        valid = false;
-    }
-    if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-        $("#userEmail-info").html("(invalid)");
-        $("#userEmail").css('background-color','#FFFFDF');
-        valid = false;
-    }
-    if(!$("#subject").val()) {
-        $("#subject-info").html("(required)");
-        $("#subject").css('background-color','#FFFFDF');
-        valid = false;
-    }
-    if(!$("#content").val()) {
-        $("#content-info").html("(required)");
-        $("#content").css('background-color','#FFFFDF');
-        valid = false;
-    }
-    return valid;
-}
+$(function() {
+
+	// Get the form.
+	var form = $('#ajax-contact');
+
+	// Get the messages div.
+	var formMessages = $('#form-messages');
+
+	// Set up an event listener for the contact form.
+	$(form).submit(function(e) {
+		// Stop the browser from submitting the form.
+		e.preventDefault();
+
+		// Serialize the form data.
+		var formData = $(form).serialize();
+
+		// Submit the form using AJAX.
+		$.ajax({
+			type: 'POST',
+			url: $(form).attr('action'),
+			data: formData
+		})
+		.done(function(response) {
+			// Make sure that the formMessages div has the 'success' class.
+			$(formMessages).removeClass('error');
+			$(formMessages).addClass('success');
+
+			// Set the message text.
+			$(formMessages).text(response);
+
+			// Clear the form.
+			$('#name').val('');
+			$('#email').val('');
+			$('#message').val('');
+		})
+		.fail(function(data) {
+			// Make sure that the formMessages div has the 'error' class.
+			$(formMessages).removeClass('success');
+			$(formMessages).addClass('error');
+
+			// Set the message text.
+			if (data.responseText !== '') {
+				$(formMessages).text(data.responseText);
+			} else {
+				$(formMessages).text('Oops! An error occured and your message could not be sent.');
+			}
+		});
+
+	});
+
+});
 </script>
 
 </body>
