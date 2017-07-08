@@ -276,13 +276,14 @@ made of high quality materials</p>
 				<div class="row">
           <h2 class="section-title text-center"> <span class="section-title-border wow pulse" data-wow-duration="1s" data-wow-delay="1s">Get In Touch</span> </h2>
           <div class="section-info col-md-10 col-md-offset-1 text-center wow fadeInDown">
-            <h3>We would love to hear from<strong> you.</strong></h3>
+            <h3 class="brandColor">We would like to hear from you</h3>
             <ul class="hr">
               <li class="hr-line"><span></span></li>
               <li class="hr-icon"><i class="icon_mail_alt"></i></li>
               <li class="hr-line"><span></span></li>
             </ul>
-            <p>Drop us a line, whether it is a comment, a question, a work proposition. You can use either the form below or the contact details given above.</p>
+            <p>Drop us a line, whether it is a comment, a question, a work proposition. <br/>
+              You can use either the form below or the contact details given above.</p>
           </div>
         </div>
 				<div class="row" id="contactform" class="wow bounce" data-wow-duration="2s" data-wow-delay="0.5s">
@@ -326,7 +327,7 @@ made of high quality materials</p>
   <br/>
     <!-- contact -->
     <!-- footer -->
-    <footer id="footer">
+    <footer id="footer" class="footerStyle">
       <div class="container">
         <div class="row">
           <div class="move-up"><a data-scroll href="#home" class="arrow_carrot-2up"></a></div>
