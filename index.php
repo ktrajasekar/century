@@ -202,20 +202,32 @@ made of high quality materials</p>
 				<div class="col-md-10 col-md-offset-1 text-center wow fadeInDown animated">
 <div id="clients-logo" class="owl-carousel">
 	<div class="item">
-		<img src="./images/clients/dalmia.jpg" alt="">
+		<img src="./images/clients/01.jpg" alt="">
 	</div>
 	<div class="item">
-		<img src="./images/clients/ramco.jpg" alt="">
+		<img src="./images/clients/02.jpg" alt="">
 	</div>
 	<div class="item">
-		<img src="./images/clients/sankar.jpg" alt="">
+		<img src="./images/clients/03.jpg" alt="">
 	</div>
 	<div class="item">
-		<img src="./images/clients/bharathi.jpg" alt="">
+		<img src="./images/clients/04.jpg" alt="">
 	</div>
 	<div class="item">
-		<img src="./images/clients/chettinad.jpg" alt="">
+		<img src="./images/clients/05.jpg" alt="">
 	</div>
+  <div class="item">
+    <img src="./images/clients/06.jpg" alt="">
+  </div>
+  <div class="item">
+    <img src="./images/clients/07.jpg" alt="">
+  </div>
+  <div class="item">
+    <img src="./images/clients/08.jpg" alt="">
+  </div>
+  <div class="item">
+    <img src="./images/clients/09.jpg" alt="">
+  </div>
 </div>
 
 
@@ -253,7 +265,7 @@ made of high quality materials</p>
           <h2 class="lts-talk wow pulse" data-wow-duration="1s" data-wow-delay="1s">CONTACT US</h2>
 					<p class="addressText">No.6 AVM Avenue, 5th Street Virugambakkam, Chennai
 <br/>Tamil Nadu, India. Pincode -  600 092</p>
-          <p class="addressText">Mobile : +91 . 98400 98400	<span class="mailstyle">MAIL : <a href="mailto:info@centurypapersacks.com" class="link">info@centurypapersacks.com</a></span></p>
+          <p class="addressText">Mobile : +91 44 2377 6265 / 6266	<span class="mailstyle">MAIL : <a href="mailto:info@centurypapersacks.com" class="link">info@centurypapersacks.com</a></span></p>
         </div>
       </div>
     </section>
