@@ -470,18 +470,22 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
 .section-title-border{
     border: 4px double #333;
     padding: 5px 20px;
-    color: #d2ac2b
+    color: #fdba16
+}
+.whitebck{
+      background:#fffcf3;
 }
 .section-info{
     padding: 10px 0px 65px 0px;
+
 }
 .section-info h3{
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin: 12px 0px;
     line-height: 36px;
     font-weight: 700;
     text-align: center;
-    letter-spacing: 2  px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 .section-info p{
@@ -2546,7 +2550,6 @@ article.blog-post:hover .blog-post,article.blog-post:hover .post-cat a,article.b
         font-size: 14px;
     }
     .section-info h3{
-        font-size: 20px;
         padding: 12px;
     }
     .service-list .service-title {
@@ -2604,7 +2607,6 @@ article.blog-post:hover .blog-post,article.blog-post:hover .post-cat a,article.b
         font-size: 1.2em;
     }
     .section-info h3{
-        font-size: 18px;
         padding: 12px;
     }
     .section-info p{

@@ -113,7 +113,7 @@ made of high quality materials</p>
   <!-- Main Wrapper -->
   <div id="main-wrapper">
     <!-- about -->
-    <section id="about" class="section">
+    <section id="about" class="section whitebck">
       <div class="container">
         <div class="row">
           <h2 class="section-title text-center"> <span class="section-title-border wow pulse" data-wow-duration="1s" data-wow-delay="1s">ABOUT US</span> </h2>
@@ -124,7 +124,7 @@ made of high quality materials</p>
               <li class="hr-icon"><img src="images/about-icon.png" alt="" /></li>
               <li class="hr-line"><span></span></li>
             </ul>
-            <p>CENTURY PAPAER SACKS is the leading manufacturer, exporter and supplier of Pasted Value bags suitable for all kind of packaging requirements. We have been building sound business relationships since past 7 years and have a network of clients all around the globe. We aim to provide our customers with complete packaging solutions in accordance to their requirements and specifications. We offer packaging solutions to our customers all around the world. </p>
+            <p>CENTURY PAPAER SACKS is the leading manufacturer, exporter and supplier of Pasted Value bags suitable for all kind of packaging requirements. We have been building sound business relationships since past 6 years and have a network of clients all around the globe. We aim to provide our customers with complete packaging solutions in accordance to their requirements and specifications. We offer packaging solutions to our customers all around the world. </p>
 						<p>We have been serving our clients in India and abroad since past seven years and our wealth of experience enable us to be a reputed international player from being domestic manufacturers and exporters. We provide customized solutions for our client’s packaging requirements and specifications.</p>
           </div>
         </div>

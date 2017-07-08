@@ -120,7 +120,9 @@ $(function(){
     $("#products-slider").owlCarousel({
       navigation : true, // Show next and prev buttons
       slideSpeed : 300,
-      autoPlay : 5000,
+      autoplay:true,
+       autoplayTimeout:1000,
+       autoplayHoverPause:true,
       stopOnHover : false,
       loop: true,
       dots:true,
@@ -142,7 +144,9 @@ $(function(){
       navigation : false, // Show next and prev buttons,
       pagination: false,
       slideSpeed : 300,
-      autoPlay : 5000,
+      autoplay:true,
+       autoplayTimeout:1000,
+       autoplayHoverPause:true,
       margin:20,
       stopOnHover : false,
       paginationSpeed : 400,
