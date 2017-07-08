@@ -15,7 +15,16 @@
 .lts-talk{
   font-size: 20px;
 }
+ul.hr li.hr-line{
+  margin: 0;
 
+}
+ul.hr li.hr-icon{
+    margin-top: -4px;
+}
+.section-title{
+      font-size: 1.5em;
+}
 }
 
  /* Tab */

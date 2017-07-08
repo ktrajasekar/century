@@ -32,6 +32,8 @@
 green-2" media="screen"/>
 <script type="text/javascript" src="js/vendor/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/vendor/modernizr.custom.js"></script>
+<link rel="stylesheet" href="css/vendor/jquery.material.form.min.css">
+
 </head>
 <body>
 <!-- preloader -->
@@ -217,9 +219,6 @@ made of high quality materials</p>
 		<img src="./images/clients/05.jpg" alt="">
 	</div>
   <div class="item">
-    <img src="./images/clients/06.jpg" alt="">
-  </div>
-  <div class="item">
     <img src="./images/clients/07.jpg" alt="">
   </div>
   <div class="item">
@@ -227,6 +226,9 @@ made of high quality materials</p>
   </div>
   <div class="item">
     <img src="./images/clients/09.jpg" alt="">
+  </div>
+  <div class="item">
+    <img src="./images/clients/06.jpg" alt="">
   </div>
 </div>
 
@@ -290,28 +292,28 @@ made of high quality materials</p>
 		    <div class="text-center">
 		      <div id="form-messages"></div>
 		    </div>
-			<form id="ajax-contact" method="post" action="mailer.php">
+			<form id="ajax-contact" class="material" method="post" action="mailer.php">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
-					<label for="name">Name:</label>
+					<!-- <label for="name">Name:</label> -->
 					<input type="text" id="name" name="name" required class="form-control" placeholder="Full Name">
 				</div>
 				</div>
 
         <div class="row">
           <div class="col-md-3 col-md-offset-3">
-					<label for="email">Email:</label>
+					<!-- <label for="email">Email:</label> -->
 					<input type="email" id="email" name="email" required class="form-control" placeholder="Email">
 				</div>
 
         <div class="col-md-3">
-					<label for="message">Phone:</label>
+					<!-- <label for="message">Phone:</label> -->
 					<input id="phone" name="phone" required class="form-control" placeholder="Phone">
 				</div>
       </div>
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-					<label for="message">Message:</label>
+					<!-- <label for="message">Message:</label> -->
 					<textarea id="message" name="message" required class="form-control" placeholder="Your Message"></textarea>
 				</div>
       </div>
@@ -369,6 +371,7 @@ made of high quality materials</p>
   </section>
   <!-- / menu items -->
 </div>
+
 <!-- /wrapper -->
 <!-- Scripts -->
 <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
@@ -383,6 +386,7 @@ made of high quality materials</p>
 <script type="text/javascript" src="js/vendor/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/vendor/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="js/vendor/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="js/vendor/jquery.material.form.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/vendor/easy-responsive-tabs.js" ></script>
 <script type="text/javascript">

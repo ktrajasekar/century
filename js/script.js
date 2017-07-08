@@ -174,6 +174,7 @@ $(function(){
     });
 
 
+    $('form.material').materialForm();
 
 
 
