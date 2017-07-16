@@ -26,7 +26,7 @@
 <link rel="stylesheet" href="css/media.css">
 <link rel="stylesheet" href="css/vendor/animate.css">
 <link rel="stylesheet" href="css/vendor/owl.carousel.css">
-
+<link rel="stylesheet" href="css/fa/css/font-awesome.min.css">
 <!-- Custom styles for this template -->
 <link rel="stylesheet" type="text/css" href="css/colors/green-2.css" title="
 green-2" media="screen"/>
@@ -59,57 +59,66 @@ green-2" media="screen"/>
     <div class="overly-mask"></div>
     <div id="bg-slider" class="home-background"></div>
     <div class="home-text container">
-      <div id="home-text-slider" class="home-carousel home-theme owl-carousel">
-        <div class="item">
-					<div class="row">
-							<div class="col-md-12 desktopslider">
-						<div class="col-md-7">
-							<div class="home-carousel-caption bannerTop">
-						    <h5 class="bannerFont">PASTED VALVE BAGS</h3>
-                  <h5 class="bannerFont">MADE OF VIRGIN</h3>
-                  <h5 class="bannerFont">EXTENSIBLE SACK KRAFT</h3>
-                  <h5 class="bannerFont">HIGH POROUS PAPER</h3>
-						          </div></div>
-						<div class="col-md-5">
-								<img src="images/banner-1-1.png" alt="" class="img-responsive">
-						</div>
-					</div>
-	</div>
-        </div>
-        <div class="item">
-					<div class="row">
-				<div class="col-md-12">
-						<div class="col-md-7">
-							<div class="home-carousel-caption">
-						            <h2>Pasted Valve Bags filler/packer for filling & weighing   </h2>
-						            <p class="text-light">THIS VALVE BAG PACKER / FILLER USES
-EITHER THE IMPELLER TYPE FILLING PROCESS
-OR AN AIR TYPE FILLING PROCESS</p>
-						          </div></div>
-						<div class="col-md-5">
-												<img src="images/banner-2-1.png" alt="" class="img-responsive">
-						</div>
-					</div>
-					</div>
-        </div>
-        <div class="item">
-					<div class="row">
-							<div class="col-md-12">
-						<div class="col-md-7">
-							<div class="home-carousel-caption bannerTop">
-						            <h2>PASTED VALVE BAGS </h2>
-						           <h5 class="bannerFont2">FOR PACKING CEMENT</h5>
-                       <h5 class="bannerFont2">FOR PACKING CARBON BLACK</h5>
-                      <h5 class="bannerFont2">FOR PACKING MINERALS</h5>
-                      <h5 class="bannerFont2">FOR PACKING TEA</h5>
-						          </div></div>
-						<div class="col-md-5">
-												<img src="images/banner-3-1.png" alt="" class="img-responsive">
-						</div>
-					</div>
-				</div>
+      <div class="col-md-1 arrowsslider visible-md visible-lg customPrevBtn">
+        <a href="javascript:void(0);"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-md-10">
+        <div id="home-text-slider" class="home-carousel home-theme owl-carousel">
+          <div class="item">
+  					<div class="row">
+  							<div class="col-md-12 desktopslider">
+  						<div class="col-md-7">
+  							<div class="home-carousel-caption bannerTop">
+  						    <h5 class="bannerFont">PASTED VALVE BAGS</h3>
+                    <h5 class="bannerFont">MADE OF VIRGIN</h3>
+                    <h5 class="bannerFont">EXTENSIBLE SACK KRAFT</h3>
+                    <h5 class="bannerFont">HIGH POROUS PAPER</h3>
+  						          </div></div>
+  						<div class="col-md-5">
+  								<img src="images/banner-1-1.png" alt="" class="img-responsive">
+  						</div>
+  					</div>
+  	</div>
+          </div>
+          <div class="item">
+  					<div class="row">
+  				<div class="col-md-12">
+  						<div class="col-md-7">
+  							<div class="home-carousel-caption">
+  						            <h2>Pasted Valve Bags filler/packer for filling & weighing   </h2>
+  						            <p class="text-light">THIS VALVE BAG PACKER / FILLER USES
+  EITHER THE IMPELLER TYPE FILLING PROCESS
+  OR AN AIR TYPE FILLING PROCESS</p>
+  						          </div></div>
+  						<div class="col-md-5">
+  												<img src="images/banner-2-1.png" alt="" class="img-responsive">
+  						</div>
+  					</div>
+  					</div>
+          </div>
+          <div class="item">
+  					<div class="row">
+  							<div class="col-md-12">
+  						<div class="col-md-7">
+  							<div class="home-carousel-caption bannerTop">
+  						            <h2>PASTED VALVE BAGS </h2>
+  						           <h5 class="bannerFont2">FOR PACKING CEMENT</h5>
+                         <h5 class="bannerFont2">FOR PACKING CARBON BLACK</h5>
+                        <h5 class="bannerFont2">FOR PACKING MINERALS</h5>
+                        <h5 class="bannerFont2">FOR PACKING TEA</h5>
+  						          </div></div>
+  						<div class="col-md-5">
+  												<img src="images/banner-3-1.png" alt="" class="img-responsive">
+  						</div>
+  					</div>
+  				</div>
+          </div>
         </div>
       </div>
+      <div class="col-md-1 arrowsslider visible-md visible-lg customNextBtn">
+        <a href="javascript:void(0);"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+      </div>
+
     </div>
     <div class="scroll"> <span class="scroll-down"></span> <span class="scroll-text">Scroll</span> </div>
   </section>

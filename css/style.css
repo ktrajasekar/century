@@ -46,7 +46,7 @@ html, body{
       color: #680000;
 }
 .container{
-  width: 1266px;
+  max-width: 1266px;
 }
 /* The Modal (background) */
 .modal {
@@ -2593,7 +2593,7 @@ article.blog-post:hover .blog-post,article.blog-post:hover .post-cat a,article.b
     }
     .logo img {
         margin-top: -10px;
-        width: 30px;
+        /*width: 30px;*/
     }
     .navmenu-open,.navbar .navbar-close{
         top: 10px;
@@ -2980,4 +2980,11 @@ h2.resp-accordion { display: block; }
   font-size: 3rem;
   color: #fff;
   font-weight: 700;
+}
+.arrowsslider a{
+  font-size: 30px;
+  color: #fff;
+}
+.arrowsslider {
+    margin-top: 15%;
 }

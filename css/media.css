@@ -25,6 +25,15 @@ ul.hr li.hr-icon{
 .section-title{
       font-size: 1.5em;
 }
+.logo-wrapper{
+  left: 20px;
+}
+.logo{
+  margin-top: 10px;
+}
+.bannerFont, .bannerFont2{
+  font-size: 1.5rem;
+}
 }
 
  /* Tab */

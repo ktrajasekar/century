@@ -97,16 +97,11 @@ $(function(){
         $('.home-text-2').css('top',$(window).height()/4.5+'px');
     });
     $('.video .cont').addClass('visible');
-
-
-
-
-
     /*/ grid gallery (Portfolio)
     new CBPGridGallery( document.getElementById( 'grid-gallery' ) );*/
 
     // Carousel
-    $("#home-text-slider").owlCarousel({
+       var owl = $("#home-text-slider").owlCarousel({
       navigation : true, // Show next and prev buttons
       slideSpeed : 500,
       autoplay:true,
@@ -121,6 +116,14 @@ $(function(){
     function callbackfn(event) {
       $('#bg-slider').backstretch("next");
 }
+$('.customNextBtn').click(function() {
+owl.trigger('next.owl.carousel', [300]);
+      $('#bg-slider').backstretch("next");
+})
+$('.customPrevBtn').click(function() {
+owl.trigger('prev.owl.carousel', [300]);
+      $('#bg-slider').backstretch("prev");
+});
 
     $("#products-slider").owlCarousel({
       navigation : true, // Show next and prev buttons
