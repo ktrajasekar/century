@@ -109,18 +109,23 @@ $(function(){
     $("#home-text-slider").owlCarousel({
       navigation : true, // Show next and prev buttons
       slideSpeed : 500,
-      autoPlay : 5000,
+      autoplay:true,
+     autoplayTimeout:10000,
       stopOnHover : false,
       paginationSpeed : 400,
       loop: true,
       items:1,
       dots:false,
+      onDragged: callbackfn
     });
+    function callbackfn(event) {
+      $('#bg-slider').backstretch("next");
+}
 
     $("#products-slider").owlCarousel({
       navigation : true, // Show next and prev buttons
       slideSpeed : 300,
-      autoplay:true,
+        autoplay:true,
        autoplayTimeout:1000,
        autoplayHoverPause:true,
       stopOnHover : false,
@@ -132,9 +137,12 @@ $(function(){
                   responsiveClass:true,
               },
               600:{
-                  items:3
+                  items:2
               },
               1000:{
+                  items:3
+              },
+              1300:{
                   items:3
               }
           }
@@ -154,14 +162,17 @@ $(function(){
       loop: true,
       responsive:{
               0:{
-                  items:1,
+                  items:2,
                   responsiveClass:true,
               },
               600:{
                   items:3
               },
               1000:{
-                  items:5
+                  items:3
+              },
+              1300:{
+                  items:3
               }
           }
     });

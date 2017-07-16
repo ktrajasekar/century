@@ -45,6 +45,9 @@ html, body{
 .brandColor{
       color: #680000;
 }
+.container{
+  width: 1266px;
+}
 /* The Modal (background) */
 .modal {
     display: none;
@@ -473,7 +476,7 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
     color: #fdba16
 }
 .whitebck{
-      background:#fffcf3;
+      background:#eef2f3;
 }
 .section-info{
     padding: 10px 0px 65px 0px;
@@ -490,7 +493,7 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
 }
 .section-info p{
     font-family: "Roboto",Helvetica,Arial,sans-serif;
-    font-size: 1.5em;
+    font-size: 2rem;
     font-weight: 400;
     margin: 1em auto 0.25em auto;
     letter-spacing: 0;
@@ -499,6 +502,9 @@ a.btn-a:hover, a.btn-a:active, a.btn-a:focus {
 }
 .text-center{
     text-align: center;
+}
+.fontService{
+  font-size: 4rem !important;
 }
 /*hr*/
 .hr{
@@ -2429,7 +2435,11 @@ article.blog-post:hover .blog-post,article.blog-post:hover .post-cat a,article.b
 
 /* 22. Media Queries
 -------------------------------------------------------------- */
-
+@media (min-width: 992px){
+.owl-carousel .owl-item img{
+      width: auto !important
+}
+}
 /* Menu Media Queries*/
 @media screen and (max-height: 30.5em) {
     .navbar nav {
@@ -2956,4 +2966,18 @@ h2.resp-accordion { display: block; }
 }
 .material .material-input input, .material .material-input textarea{
   margin: 0 !important;
+}
+.bannerTop{
+  margin-top: 4rem;
+  text-align: left;
+}
+.bannerFont{
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 700;
+}
+.bannerFont2{
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
 }

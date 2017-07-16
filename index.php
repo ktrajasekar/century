@@ -47,7 +47,7 @@ green-2" media="screen"/>
   <div class="header-barlist clearfix">
   <!-- logo -->
   <div class="logo-wrapper">
-    <h1 class="logo"><img src="images/century-logo.png" alt="Stefen Title Services a responsive minimal multipurpose theme"/></h1>
+    <h1 class="logo"><img src="images/century_logo.jpg" alt="Stefen Title Services a responsive minimal multipurpose theme"/></h1>
   </div>
   <!-- /logo -->
   <!-- navigatin icon -->
@@ -62,14 +62,13 @@ green-2" media="screen"/>
       <div id="home-text-slider" class="home-carousel home-theme owl-carousel">
         <div class="item">
 					<div class="row">
-							<div class="col-md-10 col-md-offset-1 desktopslider">
+							<div class="col-md-12 desktopslider">
 						<div class="col-md-7">
-							<div class="home-carousel-caption">
-						    <h2 class="sliderFont">Pasted Valve Grade Lining Paper</h2>
-						            <p class="text-light">Block Bottom Valve Bags combine minimum
-						usage with highest mechanical & humidity
-						resistance for nearly zero material<br>
-						losses in the transport process</p>
+							<div class="home-carousel-caption bannerTop">
+						    <h5 class="bannerFont">PASTED VALVE BAGS</h3>
+                  <h5 class="bannerFont">MADE OF VIRGIN</h3>
+                  <h5 class="bannerFont">EXTENSIBLE SACK KRAFT</h3>
+                  <h5 class="bannerFont">HIGH POROUS PAPER</h3>
 						          </div></div>
 						<div class="col-md-5">
 								<img src="images/banner-1-1.png" alt="" class="img-responsive">
@@ -79,12 +78,13 @@ green-2" media="screen"/>
         </div>
         <div class="item">
 					<div class="row">
-				<div class="col-md-10 col-md-offset-1">
+				<div class="col-md-12">
 						<div class="col-md-7">
 							<div class="home-carousel-caption">
 						            <h2>Pasted Valve Bags filler/packer for filling & weighing   </h2>
-						            <p class="text-light">This valve bag packer / filler uses
-either the impeller type filling process or an air type filling process</p>
+						            <p class="text-light">THIS VALVE BAG PACKER / FILLER USES
+EITHER THE IMPELLER TYPE FILLING PROCESS
+OR AN AIR TYPE FILLING PROCESS</p>
 						          </div></div>
 						<div class="col-md-5">
 												<img src="images/banner-2-1.png" alt="" class="img-responsive">
@@ -94,12 +94,14 @@ either the impeller type filling process or an air type filling process</p>
         </div>
         <div class="item">
 					<div class="row">
-							<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-12">
 						<div class="col-md-7">
-							<div class="home-carousel-caption">
-						            <h2>Pasted Valve Bags  </h2>
-						            <p class="text-light">Pasted Valve Bags are closed bags
-made of high quality materials</p>
+							<div class="home-carousel-caption bannerTop">
+						            <h2>PASTED VALVE BAGS </h2>
+						           <h5 class="bannerFont2">FOR PACKING CEMENT</h5>
+                       <h5 class="bannerFont2">FOR PACKING CARBON BLACK</h5>
+                      <h5 class="bannerFont2">FOR PACKING MINERALS</h5>
+                      <h5 class="bannerFont2">FOR PACKING TEA</h5>
 						          </div></div>
 						<div class="col-md-5">
 												<img src="images/banner-3-1.png" alt="" class="img-responsive">
@@ -139,7 +141,7 @@ made of high quality materials</p>
       <div class="container">
         <div class="row">
           <h2 class="section-title text-center"> <span class="section-title-border wow pulse" data-wow-duration="1s" data-wow-delay="1s">PRODUCT</span> </h2>
-          <div class="section-info col-md-10 col-md-offset-1 text-center wow fadeInDown">
+          <div class="section-info col-md-12 text-center wow fadeInDown">
             <h3 class="brandColor">Reliable, attractive & convenient packaging</h3>
             <ul class="hr">
               <li class="hr-line"><span></span></li>
@@ -152,25 +154,25 @@ made of high quality materials</p>
 
       <div id="products-slider" class="owl-carousel">
 <div class="item">
-<img src="images/products/cement-packs.jpg" alt="">
+<img src="images/products/set-a-01.jpg" alt="">
 </div>
 <div class="item">
-		<img src="images/products/cement-packs-3.jpg" alt="">
+		<img src="images/products/set-a-02.jpg" alt="">
 </div>
 <div class="item">
-<img src="images/products/cement-packs-2.jpg" alt="">
+<img src="images/products/set-a-03.jpg" alt="">
 </div>
 <div class="item">
-<img src="images/products/cement-packs.jpg" alt="">
+<img src="images/products/set-b-01.jpg" alt="">
 </div>
 <div class="item">
-		<img src="images/products/cement-packs-3.jpg" alt="">
+		<img src="images/products/set-b-02.jpg" alt="">
 </div>
 <div class="item">
-<img src="images/products/cement-packs-2.jpg" alt="">
+<img src="images/products/set-b-03.jpg" alt="">
 </div>
 			</div>
-                      <h3 class="brandColor">Pasted Valve Bags </h3>
+                      <h3 class="brandColor fontService">Pasted Valve Bags </h3>
 											<p class="onlyCaps">Valve bags deliver top performance wherever high-speed filling processes are used. Filling performance and protection properties can be optimised according to the customer’s needs. Valve bags can be equipped with PE-free film or PE-Inliners where enhanced moisture protection is needed.</p>
 
           </div>
@@ -267,7 +269,7 @@ made of high quality materials</p>
           <h2 class="lts-talk wow pulse" data-wow-duration="1s" data-wow-delay="1s">CONTACT US</h2>
 					<p class="addressText">No.6 AVM Avenue, 5th Street Virugambakkam, Chennai
 <br/>Tamil Nadu, India. Pincode -  600 092</p>
-          <p class="addressText">Mobile : +91 44 2377 6265 / 6266	<span class="mailstyle">MAIL : <a href="mailto:info@centurypapersacks.com" class="link">info@centurypapersacks.com</a></span></p>
+          <p class="addressText">Phone : +91 44 2377 6265 / 6266	<br class="visible-xs"><span class="mailstyle">MAIL : <a href="mailto:info@centurypapersacks.com" class="link">info@centurypapersacks.com</a></span></p>
         </div>
       </div>
     </section>
@@ -277,7 +279,7 @@ made of high quality materials</p>
       <div id="container">
 				<div class="row">
           <h2 class="section-title text-center"> <span class="section-title-border wow pulse" data-wow-duration="1s" data-wow-delay="1s">Get In Touch</span> </h2>
-          <div class="section-info col-md-10 col-md-offset-1 text-center wow fadeInDown">
+          <div class="section-info col-md-12 text-center wow fadeInDown">
             <h3 class="brandColor">We would like to hear from you</h3>
             <ul class="hr">
               <li class="hr-line"><span></span></li>
@@ -308,7 +310,7 @@ made of high quality materials</p>
 
         <div class="col-md-3">
 					<!-- <label for="message">Phone:</label> -->
-					<input id="phone" name="phone" required class="form-control" placeholder="Phone">
+					<input type="number" id="phone" name="phone" required class="form-control" placeholder="Phone" min="0" step="1">
 				</div>
       </div>
       <div class="row">
@@ -399,7 +401,7 @@ made of high quality materials</p>
             "images/backgrounds/3.jpg",
         ], {
             fade: 1000,
-            duration: 5000
+            duration: 8000
         });
       </script>
 
