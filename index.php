@@ -91,7 +91,7 @@ green-2" media="screen"/>
   OR AN AIR TYPE FILLING PROCESS</p>
   						          </div></div>
   						<div class="col-md-5">
-  												<img src="images/banner-2-1.png" alt="" class="img-responsive">
+  												<img src="images/banner-2-1.png" alt="" class="img-responsive sliderMobile">
   						</div>
   					</div>
   					</div>
@@ -401,6 +401,7 @@ green-2" media="screen"/>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/vendor/easy-responsive-tabs.js" ></script>
 <script type="text/javascript">
+
        /* ==============================================
         Backstretch - v1.1
         =============================================== */
